@@ -1,0 +1,142 @@
+html {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+  }
+  
+  header {
+    height: 50px;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .news p {
+    animation: marquee linear 13s infinite;
+    font-family: "Courier Prime";
+  }
+  
+  @keyframes marquee {
+      from {
+          transform: translateX(150%);
+      }
+      to {
+          transform: translateX(-700%);
+      }
+  }
+  
+  .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    margin: 10px;
+    font-family: "Courier Prime";
+    font-size: 1.25rem;
+  }
+  
+  .logo {
+    background-color: white;
+    max-width: 35%;
+    margin: 5px;
+  }
+  
+  .club-photos {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .photo-container {
+    max-width: 30%;
+    overflow: hidden;
+    margin: 5px;
+  }
+  
+  .photo-container img {
+    transition: 0.5s all ease-in-out;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .quote-box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .quote {
+    font-family: "Indie Flower";
+    font-size: 2rem;
+    margin: 5px;
+  }
+  
+  .quoter {
+    display: flex;
+    justify-content: end;
+    font-size: 1.5rem;
+    margin: 5px;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  li {
+    list-style-type: none;
+    font-family: "Courier Prime";
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  a:hover {
+    color: red;
+  }
+  
+  .photo-container img:hover {
+    transform: scale(1.25);
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .photo-container {
+      max-width: 100%;
+    }
+  
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    li {
+      border: 1px solid white;
+      padding: 5px;
+      margin: 15px;
+      width: 300px;
+      text-align: center;
+    }
+  
+    li:hover {
+      background-color: white;
+    }
+  
+    .button:hover a {
+      color: black;
+      display: block;
+    }
+     
+  }

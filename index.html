@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>We Don't Talk About This Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Indie+Flower&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="news">
+        <p>
+          Remember: Tyler is always watching...
+        </p>
+      </div>
+    </header>
+    <main>
+      <div class="intro">
+        <img src="https://cdn2.iconfinder.com/data/icons/fighter-fighting-attacking-poses/227/fight-014-512.png" class="logo" alt="Man in fighting position">
+        <p>If you are on this website, this means you are either a returning member or you are brand new here, which means, in this case, someone has broken the rules.
+        <br><br>Rules will be reviewed at the start of each meeting.
+        </p>
+      </div>
+    </main>
+    <div class="club-photos">
+      <div class="photo-container">
+        <img src="https://lensebender.files.wordpress.com/2015/04/embrace-post.jpg" alt="Two men hugging in a crowd">
+      </div>
+      <div class="photo-container">
+        <img src="https://media.vanityfair.com/photos/61f2d068c7c976782553ded7/master/w_2560%2Cc_limit/fight-club-ending.jpg" alt="Two men ready to fight in a crowd watching">
+      </div>
+      <div class="photo-container">
+        <img src="https://ychef.files.bbci.co.uk/976x549/p07h2zhs.jpg" alt="Shirtless man staring forward surrounded by other men">
+      </div>
+    </div>
+    <div class="quote-box">
+      <p class="quote">"I have never felt more alive since I joined this club. Don't ask questions. No excuses. You have to trust Tyler."</p>
+      <p class="quoter">-Angel, member since 1996</p>
+    </div>
+    <footer>
+      <ul>
+        <li class="button"><a href="" onclick="myFunction()">Events</a></li>
+        <li class="button"><a href="" onclick="myFunction()">Results</a></li>
+        <li class="button"> <a href="" onclick="myFunction()">Rules</a></li>
+      </ul>
+      
+  <script>
+  function myFunction() {
+    let password = prompt("Please enter the password to see this information.");
+    let response;
+    const correctPasswords = ['mayhem', 'Mayhem', 'projectmayhem', 'ProjectMayhem', 'Projectmayhem', 'projectMayhem'];
+  
+    if (password == "" || password == null) {
+      response = alert("Come on, you should at least give it a try.");
+      myFunction();
+    }  else if (correctPasswords.includes(password)) {
+      response = alert("Well done. Please visit us at 537 Paper Street, Bradford, 19808. See you there.");
+    } else {
+      response = alert("Sorry, I guess you don't have what it takes to be in this club.");
+    }
+  
+  }
+  </script>
+    </footer>
+  </body>
+</html>
